@@ -2,6 +2,27 @@ doctype
 html
   head
     title Craig Rogers
-    link(href='styles.css', rel='stylesheet')
-  body#work
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    link(rel='stylesheet' href='styles.css')
+
+  body#portfolio
     h1 Craig Rogers
+      br
+      span Front-end developer
+
+    ul#projects
+      each project in projects
+        li
+          a.project(href=project.url target='_blank')
+            strong #{project.title}
+            br
+            em #{project.client}
+
+          .image
+            img(src=project.img alt=project.title)
+
+    a(href='mailto:hello@crai.gr'  target='_blank') hello@crai.gr
+    br
+    a.ellipsis(href='https://uk.linkedin.com/in/craigarogers' target='_blank') linkedin.com/in/craigarogers
+
+    script(src='scripts.js')
