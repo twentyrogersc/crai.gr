@@ -4,7 +4,7 @@
   "description": "crai.gr",
   "repository": "twentyrogersc/crai.gr",
   "scripts": {
-    "server": "node server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "harp": "*"
