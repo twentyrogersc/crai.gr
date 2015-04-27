@@ -1,6 +1,6 @@
 
 # Craig Rogers
-[hello@crai.gr](mailto:hello@crai.gr) | [linkedin.com/in/craigarogers](https://uk.linkedin.com/in/craigarogers)
+[crai.gr](http://www.crai.gr) | [hello@crai.gr](mailto:hello@crai.gr) | [linkedin.com/in/craigarogers](https://uk.linkedin.com/in/craigarogers)
 
 An experienced front-end developer just wanting to make great things.
 
