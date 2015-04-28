@@ -5,11 +5,11 @@
 An experienced front-end developer just wanting to make great things.
 
 
-## Skillset
+## Skills
 
 - HTML5, Jade, Templating (Django, Mustache, etc)
 - CSS3, SASS, Stylus
-- JavaScript, Browserify, RequireJS, jQuery, Backbone.js
+- JavaScript, Browserify, RequireJS, jQuery, Backbone.js, Canvas
 - Grunt, Gulp.js
 - Node.js, MongoDB, PHP, MySQL
 - UX, Wireframing, Photoshop, Illustrator
