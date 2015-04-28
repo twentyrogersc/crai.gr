@@ -2,7 +2,7 @@
 # Craig Rogers
 **[crai.gr](http://www.crai.gr) | [hello@crai.gr](mailto:hello@crai.gr) | [linkedin.com/in/craigarogers](https://uk.linkedin.com/in/craigarogers)**
 
-An experienced front-end developer just wanting to make great things.
+An experienced front-end developer just wanting to make great things. With interests spanning the latest in both design and technology, successful projects are developed at both a technical and conceptual level.
 
 
 ## Skills
