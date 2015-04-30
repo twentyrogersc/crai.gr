@@ -32,7 +32,7 @@ An interactive Facebook application that placed friends into a Wheel of Fortune 
 ### [Denim Studio](http://trr.tv/selfridges)
 **Selfridges/The Rumpus Room, 2013**
 
-A suit of scripts that dynamically created and powered a navigable mosaic website, with the ability to control/moderate/tweak the composition at each stage.
+A suite of scripts that dynamically created and powered a navigable mosaic website, with the ability to control/moderate/tweak the composition at each stage.
 > Node.js, Photoshop JSX, SVGs, HTML, SASS, JavaScript (Canvas)
 
 
