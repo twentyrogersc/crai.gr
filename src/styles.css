@@ -1,0 +1,78 @@
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font: 400 14px/20px 'Helvetica Neue', helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 700px;
+  min-width: 280px;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: .25em;
+}
+
+h2 {
+  margin: 2em 0 .5em;
+}
+  h2 + h3 {
+    margin-top: 0;
+  }
+
+h3 {
+  margin-top: 2em;
+}
+
+  h3 + p {
+    margin-bottom: .5em;
+  }
+
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+ul {
+  margin: 0;
+}
+
+li {
+  margin-left: 20px;
+}
+
+blockquote {
+  font-size: .8em;
+  font-weight: bold;
+}
+
+#index h1 {
+  display: none;
+}
+
+#details {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
