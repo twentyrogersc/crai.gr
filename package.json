@@ -3,19 +3,17 @@
   "version": "1.0.0",
   "description": "crai.gr",
   "repository": "twentyrogersc/crai.gr",
+
   "scripts": {
     "build": "next build",
     "dev": "next",
+    "heroku-postbuild": "heroku-nextjs-build",
     "precommit": "lint-staged",
-    "start": "next start"
+    "start": "next start -p $PORT"
   },
-  "lint-staged": {
-    "*.js": [
-      "prettier --print-width=100 --single-quote --write",
-      "git add"
-    ]
-  },
+
   "dependencies": {
+    "@mars/heroku-nextjs-build": "^2.0.0",
     "next": "^2.1.0",
     "react": "^15.5.3",
     "react-dom": "^15.5.3"
@@ -25,8 +23,18 @@
     "lint-staged": "^3.4.0",
     "prettier": "^0.22.0"
   },
+
+  "lint-staged": {
+    "*.js": [
+      "prettier --print-width=100 --single-quote --write",
+      "git add"
+    ]
+  },
+
   "engines": {
-    "node": "0.10.x",
-    "npm": "1.2.x"
-  }
+    "node": "6.9.x"
+  },
+  "cacheDirectories": [
+    "nextjs/node_modules"
+  ]
 }
