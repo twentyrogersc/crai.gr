@@ -67,12 +67,12 @@ blockquote {
   font-weight: bold;
 }
 
-#index h1 {
-  display: none;
-}
-
 #details {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
+
+  #details h1 {
+    display: none;
+  }
