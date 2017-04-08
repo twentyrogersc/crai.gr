@@ -4,14 +4,26 @@
   "description": "crai.gr",
   "repository": "twentyrogersc/crai.gr",
   "scripts": {
-    "dev": "next",
     "build": "next build",
+    "dev": "next",
+    "precommit": "lint-staged",
     "start": "next start"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --print-width=100 --single-quote --write",
+      "git add"
+    ]
   },
   "dependencies": {
     "next": "^2.1.0",
     "react": "^15.5.3",
     "react-dom": "^15.5.3"
+  },
+  "devDependencies": {
+    "husky": "^0.13.3",
+    "lint-staged": "^3.4.0",
+    "prettier": "^0.22.0"
   },
   "engines": {
     "node": "0.10.x",
