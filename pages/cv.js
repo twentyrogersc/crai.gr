@@ -1,9 +1,5 @@
-import Head from '../components/Head';
-
 export default () => (
   <div id="cv">
-    <Head />
-
     <h1>Craig Rogers</h1>
     <p>
       <strong>
