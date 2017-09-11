@@ -1,14 +1,18 @@
-import Head from '../components/Head';
+import Link from '../components/Link';
+import Title from '../components/Title';
+import styled from 'styled-components';
+
+const Hidden = Title.extend`
+  display: none;
+`;
 
 export default () => (
-  <div id="details">
-    <Head />
-
-    <h1>Craig Rogers</h1>
-    <a href="mailto:hello@crai.gr" target="_blank">hello@crai.gr</a>
+  <main>
+    <Hidden>Craig Rogers</Hidden>
+    <Link href="mailto:hello@crai.gr" target="_blank">hello@crai.gr</Link>
     <br />
-    <a href="https://uk.linkedin.com/in/craigarogers" target="_blank">
+    <Link href="https://uk.linkedin.com/in/craigarogers" target="_blank">
       linkedin.com/in/craigarogers
-    </a>
-  </div>
+    </Link>
+  </main>
 );
