@@ -1,5 +1,5 @@
-import Document, { Head, Main as NextMain, NextScript } from 'next/document';
-import styled, { ServerStyleSheet } from 'styled-components';
+import Document, { Head, Main as NextMain, NextScript } from 'next/document'
+import styled, { ServerStyleSheet } from 'styled-components'
 
 const Html = styled.html`
   align-items: center;
@@ -7,7 +7,7 @@ const Html = styled.html`
   margin: 0;
   min-height: 100%;
   padding: 0;
-`;
+`
 
 const Body = styled.body`
   box-sizing: border-box;
@@ -17,13 +17,13 @@ const Body = styled.body`
   min-width: 280px;
   padding: 40px 20px;
   width: 100%;
-`;
+`
 
 export default class extends Document {
   render() {
-    const sheet = new ServerStyleSheet();
-    const main = sheet.collectStyles(<NextMain />);
-    const style = sheet.getStyleElement();
+    const sheet = new ServerStyleSheet()
+    const main = sheet.collectStyles(<NextMain />)
+    const style = sheet.getStyleElement()
 
     return (
       <Html>
@@ -51,6 +51,6 @@ export default class extends Document {
           />
         </Body>
       </Html>
-    );
+    )
   }
 }

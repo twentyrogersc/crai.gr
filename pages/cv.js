@@ -1,23 +1,23 @@
-import Card from '../components/Card';
-import Link from '../components/Link';
-import Subtitle from '../components/Subtitle';
-import Title from '../components/Title';
-import styled from 'styled-components';
+import Card from '../components/Card'
+import Link from '../components/Link'
+import Subtitle from '../components/Subtitle'
+import Title from '../components/Title'
+import styled from 'styled-components'
 
 const Container = styled.main`
   margin: 4em 0 6em;
-`;
+`
 
 const Intro = styled.p`
   font-weight: 700;
   margin: 0.4em 0 2em;
-`;
+`
 
 const Skills = styled.ul`
   list-style-type: none;
   margin: 1em 0 2em;
   padding-left: 0;
-`;
+`
 
 const SkillsTitle = styled.strong`
   display: block;
@@ -26,11 +26,11 @@ const SkillsTitle = styled.strong`
   @media (min-width: 500px) {
     display: inline;
   }
-`;
+`
 
 const Links = styled.section`
   margin-top: 6em;
-`;
+`
 
 export default () => (
   <Container>
@@ -144,4 +144,4 @@ export default () => (
       <Link href="/">crai.gr</Link>
     </Links>
   </Container>
-);
+)
