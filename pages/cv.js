@@ -1,3 +1,4 @@
+import Contact from '../components/Contact'
 import Intro from '../components/Intro'
 
 import Card from '../components/Card'
@@ -126,13 +127,7 @@ export default function Cv() {
         title="Bachelor of Science (BSc), Computing &amp; Interaction Design"
       />
 
-      <Links>
-        <Link href="https://uk.linkedin.com/in/craigarogers">linkedin.com/in/craigarogers</Link>
-        <br />
-        <Link href="mailto:hello@crai.gr">hello@crai.gr</Link>
-        <br />
-        <Link href="/">crai.gr</Link>
-      </Links>
+      <Contact />
     </Root>
   )
 }
