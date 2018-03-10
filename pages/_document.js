@@ -1,8 +1,19 @@
 import { normalize } from 'polished'
 import NextDocument, { Head, Main, NextScript } from 'next/document'
-import { ServerStyleSheet, injectGlobal } from 'styled-components'
+import styled, { ServerStyleSheet, injectGlobal } from 'styled-components'
 
-injectGlobal`${normalize()}`
+injectGlobal`
+  ${normalize()}
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+`
+
+const HTML = styled.html`
+  font: 400 1em/1.4em 'Oxygen', sans-serif;
+  -webkit-font-smoothing: antialiased;
+`
 
 export default class Document extends NextDocument {
   static getInitialProps({ renderPage }) {
@@ -14,9 +25,10 @@ export default class Document extends NextDocument {
 
   render() {
     return (
-      <html>
+      <HTML>
         <Head>
           <title>Craig Rogers</title>
+          <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet" />
           {this.props.styleTags}
         </Head>
         <body>
@@ -28,7 +40,7 @@ export default class Document extends NextDocument {
             }}
           />
         </body>
-      </html>
+      </HTML>
     )
   }
 }
