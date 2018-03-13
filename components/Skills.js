@@ -1,8 +1,5 @@
 import Section from './Section'
-import Title from './Title'
 import styled from 'styled-components'
-
-const Root = Section.extend``
 
 const List = styled.ul`
   list-style: none;
@@ -26,8 +23,7 @@ const skills = {
 
 export default function Skills() {
   return (
-    <Root>
-      <Title>Skills</Title>
+    <Section title="Skills">
       <List>
         {Object.keys(skills).map(skill => (
           <Skill key={skill}>
@@ -36,6 +32,6 @@ export default function Skills() {
           </Skill>
         ))}
       </List>
-    </Root>
+    </Section>
   )
 }
