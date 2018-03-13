@@ -22,23 +22,9 @@ const Description = styled.p`
 
 export default ({ children, company, companyHref, date, title, titleHref }) => (
   <Section>
-    <Title>
-      {titleHref ? (
-        <Link href={titleHref} target="_blank">
-          {title}
-        </Link>
-      ) : (
-        title
-      )}
-    </Title>
+    <Title>{titleHref ? <Link href={titleHref}>{title}</Link> : title}</Title>
     <Subtitle>
-      {companyHref ? (
-        <Link href={companyHref} target="_blank">
-          {company}
-        </Link>
-      ) : (
-        company
-      )}
+      {companyHref ? <Link href={companyHref}>{company}</Link> : company}
       {date && `, ${date}`}
     </Subtitle>
     <Description>{children}</Description>

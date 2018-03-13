@@ -17,15 +17,9 @@ const WebsiteLink = Link.extend`
 export default function Contact({ nested }) {
   return (
     <Root nested={nested}>
-      <Link href="https://uk.linkedin.com/in/craigarogers" target="_blank">
-        linkedin.com/in/craigarogers
-      </Link>
-      <Link href="mailto:hello@crai.gr" target="_blank">
-        hello@crai.gr
-      </Link>
-      <WebsiteLink href="/" target="_blank">
-        crai.gr
-      </WebsiteLink>
+      <Link href="https://uk.linkedin.com/in/craigarogers">linkedin.com/in/craigarogers</Link>{' '}
+      <Link href="mailto:hello@crai.gr">hello@crai.gr</Link>{' '}
+      <WebsiteLink href="/">crai.gr</WebsiteLink>
     </Root>
   )
 }

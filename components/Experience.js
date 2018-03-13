@@ -57,10 +57,7 @@ export default function Experience() {
       {experience.map(({ company, date, description, role, url }, index) => (
         <Job key={index}>
           <Role>{role}</Role>
-          <Link href={url} target="_blank">
-            {company}
-          </Link>{' '}
-          {date}
+          <Link href={url}>{company}</Link> {date}
           {description && <Description>{description}</Description>}
         </Job>
       ))}

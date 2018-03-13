@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 
-export default styled.a`
+export default styled(({ component: Component = 'a', target = '_blank', ...props }) => (
+  <span>
+    <Component target={target} {...props} />
+  </span>
+))`
   border-bottom: 1px solid #bbb;
   color: #000;
   display: inline-block;
