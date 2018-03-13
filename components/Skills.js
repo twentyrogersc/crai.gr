@@ -1,7 +1,8 @@
+import Section from './Section'
 import Title from './Title'
 import styled from 'styled-components'
 
-const Root = styled.section``
+const Root = Section.extend``
 
 const List = styled.ul`
   list-style: none;
@@ -9,7 +10,11 @@ const List = styled.ul`
   padding: 0;
 `
 
-const ListItem = styled.li``
+const Skill = styled.li``
+
+const Name = styled.strong`
+  font-weight: 700;
+`
 
 const skills = {
   JavaScript: ['ES6', 'React', 'Redux', 'Backbone', 'Canvas', 'Webpack', 'Gulp', 'Browserify'],
@@ -25,10 +30,10 @@ export default function Skills() {
       <Title>Skills</Title>
       <List>
         {Object.keys(skills).map(skill => (
-          <ListItem key={skill}>
-            <strong>{skill} </strong>
+          <Skill key={skill}>
+            <Name>{skill} </Name>
             {skills[skill].join(', ')}
-          </ListItem>
+          </Skill>
         ))}
       </List>
     </Root>

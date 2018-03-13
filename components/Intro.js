@@ -1,28 +1,22 @@
+import Section from './Section'
 import Title from './Title'
 import styled from 'styled-components'
 
-const Root = styled.header`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-
+const Root = Section.withComponent('header').extend`
   @media screen {
-    max-width: 620px;
     min-height: 100vh;
-    padding: 20px;
   }
 `
 
 const Bio = styled.p`
-  margin: ${({ bottom }) => (bottom ? '0 0 2em' : 0)};
+  margin: 0;
 `
 
 export default function Intro({ children, expand }) {
   return (
     <Root>
       <Title>Craig Rogers</Title>
-      <Bio bottom={!!children}>
+      <Bio>
         An award-winning front-end developer just wanting to make great things.
         {expand &&
           `

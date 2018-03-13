@@ -1,7 +1,10 @@
 import Link from './Link'
+import Section from './Section'
 import styled from 'styled-components'
 
-const Root = styled.section``
+const Root = Section.extend`
+  align-items: flex-start;
+`
 
 const WebsiteLink = Link.extend`
   display: none;
@@ -11,17 +14,15 @@ const WebsiteLink = Link.extend`
   }
 `
 
-export default function Contact() {
+export default function Contact({ nested }) {
   return (
-    <Root>
+    <Root nested={nested}>
       <Link href="https://uk.linkedin.com/in/craigarogers" target="_blank">
         linkedin.com/in/craigarogers
       </Link>
-      <br />
       <Link href="mailto:hello@crai.gr" target="_blank">
         hello@crai.gr
       </Link>
-      <br />
       <WebsiteLink href="/" target="_blank">
         crai.gr
       </WebsiteLink>
