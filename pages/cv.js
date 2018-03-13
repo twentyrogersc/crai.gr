@@ -1,5 +1,6 @@
 import Contact from '../components/Contact'
 import Intro from '../components/Intro'
+import Skills from '../components/Skills'
 
 import Card from '../components/Card'
 import Link from '../components/Link'
@@ -7,21 +8,6 @@ import Subtitle from '../components/Subtitle'
 import styled from 'styled-components'
 
 const Root = styled.main``
-
-const Skills = styled.ul`
-  list-style-type: none;
-  margin: 1em 0 2em;
-  padding-left: 0;
-`
-
-const SkillsTitle = styled.strong`
-  display: block;
-  margin-top: 0.5em;
-
-  @media (min-width: 500px) {
-    display: inline;
-  }
-`
 
 const Links = styled.section`
   margin-top: 6em;
@@ -31,27 +17,7 @@ export default function Cv() {
   return (
     <Root>
       <Intro expand />
-
-      <Subtitle>Skills</Subtitle>
-      <Skills>
-        <li>
-          <SkillsTitle>JavaScript</SkillsTitle> ES6, React, Redux, Backbone, Canvas, Webpack, Gulp,
-          Browserify
-        </li>
-        <li>
-          <SkillsTitle>HTML5</SkillsTitle> Templating (Django, Mustache, etc), Jade
-        </li>
-        <li>
-          <SkillsTitle>CSS3</SkillsTitle> Modules, PostCSS, BEM, Sass, Stylus
-        </li>
-        <li>
-          <SkillsTitle>Testing/Deployment</SkillsTitle> Jest, Mocha, ESLint, NPM, CircleCI, Node.js,
-          TDD
-        </li>
-        <li>
-          <SkillsTitle>UI/UX</SkillsTitle> Wireframing, Sketch, Photoshop, Research
-        </li>
-      </Skills>
+      <Skills />
 
       <Subtitle>Experience</Subtitle>
       <Card
