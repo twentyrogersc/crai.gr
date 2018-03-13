@@ -1,11 +1,12 @@
 import Contact from '../components/Contact'
+import Experience from '../components/Experience'
 import Intro from '../components/Intro'
 import Skills from '../components/Skills'
+import styled from 'styled-components'
 
 import Card from '../components/Card'
 import Link from '../components/Link'
 import Subtitle from '../components/Subtitle'
-import styled from 'styled-components'
 
 const Root = styled.main``
 
@@ -18,48 +19,7 @@ export default function Cv() {
     <Root>
       <Intro expand />
       <Skills />
-
-      <Subtitle>Experience</Subtitle>
-      <Card
-        company="Tourwriter"
-        companyHref="https://tourwriter.com/"
-        date="Oct 2017 - Present"
-        title="Lead Developer"
-      />
-      <Card
-        company="Unmade"
-        companyHref="https://unmade.com"
-        date="May 2015 - Aug 2017"
-        title="Lead Front-end Developer"
-      >
-        Overseeing all front-end work within the company, with a strong focus on building a scalable
-        and flexible product. Introduced build tools, styleguides (components), testing and
-        continuous deployment into the stack. Projects mainly surround the core Unmade products,
-        consisting of data-driven graphical programming (canvas) and interface implementation
-        (react, redux, apis, etc).
-      </Card>
-      <Card
-        company="The Rumpus Room"
-        companyHref="https://vimeo.com/therumpusroom"
-        date="Sep 2010 – Apr 2015"
-        title="Front-end Developer"
-      >
-        Lead front-end development within the studio, involving feasibility analysis, prototyping,
-        development and testing. Projects were mainly large JavaScript web builds centred around the
-        latest HTML5 technologies (video, canvas, getUserMedia, etc), great user experiences and
-        responsive design implementation. Clients included Google, Selfridges, Eurovision, Tate, P&G
-        and the International Olympic Committee.
-      </Card>
-      <Card
-        company="Four Communications"
-        companyHref="http://www.fourcommunications.com"
-        date="Sep 2009 – Aug 2010"
-        title="Web developer"
-      >
-        Full-stack development, working on global websites with a focus on accessibility and
-        multi-lingual functionality. Clients included Sony Computer Entertainment Europe, HSBC and
-        the Office for National Statistics (Census 2011).
-      </Card>
+      <Experience />
 
       <Subtitle>Projects</Subtitle>
       <Card company="Unmade" date="2016" title="UMd" titleHref="https://umd.studio">
