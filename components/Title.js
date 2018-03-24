@@ -1,6 +1,7 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export default styled.h1`
-  font: 700 32px/1em 'Rufina', serif;
+  font-size: 1em;
+  font-weight: 700;
   margin: 0;
-`;
+`
