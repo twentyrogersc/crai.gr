@@ -21,17 +21,15 @@ const skills = {
   'UI/UX': ['Wireframing', 'Sketch', 'Photoshop', 'Research']
 }
 
-export default function Skills() {
-  return (
-    <Section title="Skills">
-      <List>
-        {Object.keys(skills).map(skill => (
-          <Skill key={skill}>
-            <Name>{skill} </Name>
-            {skills[skill].join(', ')}
-          </Skill>
-        ))}
-      </List>
-    </Section>
-  )
-}
+export default () => (
+  <Section title="Skills">
+    <List>
+      {Object.keys(skills).map(skill => (
+        <Skill key={skill}>
+          <Name>{skill} </Name>
+          {skills[skill].join(', ')}
+        </Skill>
+      ))}
+    </List>
+  </Section>
+)

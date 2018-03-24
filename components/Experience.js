@@ -39,20 +39,12 @@ const experience = [
   }
 ]
 
-export default function Experience() {
-  return (
-    <Section title="Experience">
-      {experience.map(({ company, date, description, role, url }) => (
-        <Card
-          company={company}
-          companyHref={url}
-          date={date}
-          key={`${company}/${role}`}
-          title={role}
-        >
-          {description}
-        </Card>
-      ))}
-    </Section>
-  )
-}
+export default () => (
+  <Section title="Experience">
+    {experience.map(({ company, date, description, role, url }) => (
+      <Card company={company} companyHref={url} date={date} key={`${company}/${role}`} title={role}>
+        {description}
+      </Card>
+    ))}
+  </Section>
+)

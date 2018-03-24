@@ -1,10 +1,8 @@
 import Contact from '../components/Contact'
 import Intro from '../components/Intro'
 
-export default function Index() {
-  return (
-    <Intro>
-      <Contact nested />
-    </Intro>
-  )
-}
+export default () => (
+  <Intro>
+    <Contact nested />
+  </Intro>
+)

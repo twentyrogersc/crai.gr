@@ -5,14 +5,12 @@ import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 import styled from 'styled-components'
 
-export default function Cv() {
-  return (
-    <main>
-      <Intro expand />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Contact />
-    </main>
-  )
-}
+export default () => (
+  <main>
+    <Intro expand />
+    <Skills />
+    <Experience />
+    <Projects />
+    <Contact />
+  </main>
+)

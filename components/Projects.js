@@ -45,14 +45,12 @@ const projects = [
   }
 ]
 
-export default function Projects() {
-  return (
-    <Section title="Projects">
-      {projects.map(({ company, date, description, name, url, year }) => (
-        <Card company={company} date={year} key={name} title={name} titleHref={url}>
-          {description}
-        </Card>
-      ))}
-    </Section>
-  )
-}
+export default () => (
+  <Section title="Projects">
+    {projects.map(({ company, date, description, name, url, year }) => (
+      <Card company={company} date={year} key={name} title={name} titleHref={url}>
+        {description}
+      </Card>
+    ))}
+  </Section>
+)
