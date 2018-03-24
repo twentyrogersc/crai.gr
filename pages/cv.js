@@ -1,4 +1,5 @@
 import Contact from '../components/Contact'
+import Education from '../components/Education'
 import Experience from '../components/Experience'
 import Intro from '../components/Intro'
 import Projects from '../components/Projects'
@@ -11,6 +12,7 @@ export default () => (
     <Skills />
     <Experience />
     <Projects />
+    <Education />
     <Contact />
   </main>
 )

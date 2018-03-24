@@ -23,12 +23,16 @@ export default styled(({ children, className, title }) => (
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 2em 0;
   width: 100%;
 
   @media screen {
     max-width: 620px;
     min-width: 300px;
     padding: ${({ nested }) => (nested ? '40px 0' : '40px 20px')};
+  }
+
+  @media print {
+    page-break-inside: avoid;
   }
 `

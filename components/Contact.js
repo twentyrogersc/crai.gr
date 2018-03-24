@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 const Root = Section.extend`
   align-items: flex-start;
+  ${({ nested }) => !nested && 'margin-top: 3em'};
 `
 
 const WebsiteLink = Link.extend`
