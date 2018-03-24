@@ -13,6 +13,12 @@ injectGlobal`
 const HTML = styled.html`
   font: 400 1em/1.4em 'Oxygen', sans-serif;
   -webkit-font-smoothing: antialiased;
+
+  @media print {
+    font-size: 0.9em;
+    line-height: 1.4em;
+    max-width: 600px;
+  }
 `
 
 export default class Document extends NextDocument {
