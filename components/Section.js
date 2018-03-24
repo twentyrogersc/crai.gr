@@ -2,10 +2,11 @@ import Title from './Title'
 import styled from 'styled-components'
 
 const SectionTitle = Title.extend`
+  padding-bottom: 1em;
   opacity: 0.5;
 
   @media screen and (min-width: 900px) {
-    padding-right: 40px;
+    padding-right: 2em;
     transform: translate(-150px, 100%);
     text-align: right;
     width: 150px;

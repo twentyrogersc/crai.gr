@@ -1,23 +1,6 @@
-import Link from './Link'
+import Card from './Card'
 import Section from './Section'
-import Subtitle from './Subtitle'
 import styled from 'styled-components'
-
-const Job = styled.div`
-  margin-bottom: 30px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-`
-
-const Role = Subtitle.extend`
-  padding: 0;
-`
-
-const Description = styled.p`
-  margin: 10px 0 0;
-`
 
 const experience = [
   {
@@ -54,12 +37,16 @@ const experience = [
 export default function Experience() {
   return (
     <Section title="Experience">
-      {experience.map(({ company, date, description, role, url }, index) => (
-        <Job key={index}>
-          <Role>{role}</Role>
-          <Link href={url}>{company}</Link> {date}
-          {description && <Description>{description}</Description>}
-        </Job>
+      {experience.map(({ company, date, description, role, url }) => (
+        <Card
+          company={company}
+          companyHref={url}
+          date={date}
+          key={`${company}/${role}`}
+          title={role}
+        >
+          {description}
+        </Card>
       ))}
     </Section>
   )

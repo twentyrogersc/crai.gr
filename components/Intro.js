@@ -9,7 +9,7 @@ const Root = Section.withComponent('header').extend`
 `
 
 const Bio = styled.p`
-  margin: 0;
+  margin: 0.5em 0 0;
 `
 
 export default function Intro({ children, expand }) {

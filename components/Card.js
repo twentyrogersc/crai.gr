@@ -1,32 +1,26 @@
 import Link from './Link'
+import Title from './Title'
 import styled from 'styled-components'
 
-const Section = styled.section`
-  margin: 1em 0 2em;
-`
-
-const Title = styled.h1`
-  font-size: 20px;
-  line-height: 1em;
-  margin: 0;
-`
-
-const Subtitle = styled.p`
-  font-weight: 700;
-  margin: 2px 0 0.4em;
-`
+const Subtitle = Title.withComponent('p')
 
 const Description = styled.p`
-  margin: 0;
+  margin: 1em 0 0;
 `
 
-export default ({ children, company, companyHref, date, title, titleHref }) => (
-  <Section>
+export default styled(({ children, className, company, companyHref, date, title, titleHref }) => (
+  <section className={className}>
     <Title>{titleHref ? <Link href={titleHref}>{title}</Link> : title}</Title>
     <Subtitle>
       {companyHref ? <Link href={companyHref}>{company}</Link> : company}
       {date && `, ${date}`}
     </Subtitle>
-    <Description>{children}</Description>
-  </Section>
-)
+    {children && <Description>{children}</Description>}
+  </section>
+))`
+  margin-bottom: 3em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+`
