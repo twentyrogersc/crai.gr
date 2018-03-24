@@ -7,7 +7,12 @@ const experience = [
     company: 'Tourwriter',
     url: 'https://tourwriter.com/',
     date: 'Oct 2017 - Present',
-    role: 'Lead Developer'
+    role: 'Lead Developer',
+    description: `
+      Leading the development and architecting of a new internal project, involving the integration
+      of real-time data (Websockets) and external api sources (Google Places). Supervised a small
+      team across both the front-end (React, Redux, Material Design) and back-end (Node.js,
+      PostgreSQL) stack, with an emphasis on scalability, code quality and team learning.`
   },
   {
     company: 'Unmade',
