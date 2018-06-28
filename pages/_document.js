@@ -35,6 +35,10 @@ export default class Document extends NextDocument {
         <Head>
           <title>Craig Rogers</title>
           <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+          />
           {this.props.styleTags}
         </Head>
         <body>
