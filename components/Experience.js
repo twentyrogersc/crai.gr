@@ -4,9 +4,15 @@ import styled from 'styled-components'
 
 const experience = [
   {
+    company: 'Google',
+    url: 'https://google.com',
+    date: 'Sep 2018 - Present',
+    role: 'Creative Engineer'
+  },
+  {
     company: 'Tourwriter',
-    url: 'https://tourwriter.com/',
-    date: 'Oct 2017 - Present',
+    url: 'https://tourwriter.com',
+    date: 'Oct 2017 - Aug 2018',
     role: 'Lead Developer',
     description: `
       Leading the development and architecting of a new internal project, involving the integration
